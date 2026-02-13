@@ -17,8 +17,11 @@ header, footer{
 }
 
 nav{
-    list-style-type: none;
     text-decoration: none;
+}
+
+nav ul{
+    list-style-type: none;
 }
 
 a:link{
