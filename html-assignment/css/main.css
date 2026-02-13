@@ -1,11 +1,36 @@
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
-}
-
 header, footer{
     background-color: rgb(68, 0, 107);
     text-align: center;
+}
+
+nav{
+    list-style-type: none;
+    text-decoration: none;
+}
+
+a:link{
+    color:rgb(0, 128, 128);
+    background-color: rgb(143, 97, 170);
+    border: 5px dashed black;
+}
+
+a:visited{
+    color:rgb(1, 35, 87);
+    background-color: rgb(143, 97, 170);
+    border: 5px dashed black;
+}
+
+a:link:hover{
+    background-color: rgb(192, 150, 216);
+}
+
+a:visited:hover{
+    background-color: rgb(192, 150, 216);
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
 }
 
 .site-title{
@@ -21,6 +46,6 @@ header, footer{
 }
 
 #hobbies li:nth-child(odd){
-        background-color: rgb(68, 0, 107);
-        color: white;
+    background-color: rgb(68, 0, 107);
+    color: white;
 }
