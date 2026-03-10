@@ -1,11 +1,126 @@
-header{
-    text-align: center;
+/* 
+First and foremost, please make a note to whomever is in charge of IMDAC to add a proper explanation for the "before" and "after" sections below.
+It is beyond infuriating to essentially be told "Use this code. Trust me bro, it works" without any explanation on what it actually does.
+There is some explanation, but it is by no means enough for one to truly figure it out.
+In fact, I still don't quite know what it does. I know it sets the box-sizing for all elements, but that is solely because the IMDAC tells me so. Without it, I would have no idea.
+*/
+
+/* Sets the box-sizing (?), font family/size, and background colour for the entire page */
+html {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    background-color: #aad4cf;
 }
 
-header ul{
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+/* The main container for the entire page. Aligns all content to the center and gives it a separate background colour */
+.container {
+    background-color: #d2f3ef;
+    width: 50%;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+/* The secondary container which holds all elements below the nav bar */
+.container .container {
+    width: 100%;
+    padding: 1rem;
+}
+
+/* The container for the form section */
+main .container {
+    border: 2px solid black;
+}
+
+/* 
+Places the text over the starfish picture
+
+Side note: If there is an easier way to do this, PLEASE tell me.
+I am so mad that I had to use 45% for the horizontal middle, and I just did not feel like doing it again for the vertical
+*/
+.header-container h1 {
+    color: white;
+    position: absolute;
+    right: 45%;
+    top: 20%
+}
+
+/* Resizes the header to fit the dang page */
+header img {
+    width: 100%;
+}
+
+/* Removes the bullet points from the list elements in the nav bar and aligns them to the center */
+nav ul {
     list-style-type: none;
+    padding: 0;
+    margin: 1rem;
+    text-align: center;
 }
 
-footer{
+/*
+Put the nav options in a line, spaces them out, and gives them an outline
+Side note: If there's a way to reliably get them spaced out equally AND centered on the screen, PLEASE TELL ME. I rammed my face into this for at least 2 hours
+*/
+nav li {
+    display: inline-block;
+    font-weight: bold;
     text-align: center;
+    font-size: 1.25rem;
+    width: 33%;
+    padding: 0.5rem;
+    border: 1px solid black;
+}
+
+/* The image in the "Life of a Starfish" section. Gets it to sit with the text wraping around it and gives it a slight margin on its right side */
+article img {
+    width: 25%;
+    float: left;
+    margin-right: 1rem;
+}
+
+/* Aligns footer text to the right */
+footer {
+    text-align: right;
+}
+
+/* All content below here is in relation to the form section */
+
+/* Both text and email fields. Gives them a 1-line margin at the bottom for decent spacing */
+input[type="text"],
+input[type="email"] {
+    display: block;
+    margin-bottom: 1rem;
+}
+
+/* The message text box */
+textarea {
+    display: block;
+    margin-bottom: 1rem;
+    width: 100%;
+    height: 15rem;
+}
+
+/* The visit options */
+input[type="radio"] {
+    display: inline-block;
+    margin-left: 0;
+    margin-right: 1rem;
+}
+
+/* The button */
+form button {
+    display: block;
+    margin-top: 1rem;
+    border: 1px solid lightgray;
+    background-color: #aad4cf;
+    font-size: 1rem;
+    width: 10rem;
+    height: 2rem;
 }
