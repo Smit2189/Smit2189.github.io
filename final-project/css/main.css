@@ -1,0 +1,9 @@
+html {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 1;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+@media screen and (min-width: 760px) {}
