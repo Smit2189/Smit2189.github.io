@@ -14,23 +14,69 @@ html {
     box-sizing: inherit;
 }
 
-h1, h2, h3, h4, h5, h6{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-weight: bold;
 }
 
-h1{
+h1 {
     font-size: 3rem;
 }
 
-h2{
+h2 {
     font-size: 2rem;
 }
 
-.chunk{
+h3 {
+    font-size: 1.5rem;
+}
+
+/* 
+    Gap to separate font shit and setup from body
+*/
+
+.chunk {
     display: flex;
     margin: 0 auto;
+    padding: 1rem;
 }
 
-@media screen and (min-width: 760px) {
+.container {
+    display: flex;
+    margin: 0 auto;
+    padding: 1rem;
 
+    flex-direction: column;
+    background-color: #ffe6ac;
 }
+
+.grid-container{
+    background-color: white;
+}
+
+#about {
+    background-color: #ffe6ac;
+}
+
+#services {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 3rem;
+    
+}
+
+#vision{
+    color: white;
+    background-image: url(../images/vision.jpg);
+    background-position: 75%;
+}
+
+#vision .container{
+    background-color: transparent;
+}
+
+@media screen and (min-width: 760px) {}
