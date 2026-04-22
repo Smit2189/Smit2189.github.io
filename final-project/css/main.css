@@ -1,9 +1,36 @@
 html {
+    box-sizing: border-box;
     font-family: "Open Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 1;
     font-style: normal;
     font-variation-settings: "wdth" 100;
+    font-size: 16px;
 }
 
-@media screen and (min-width: 760px) {}
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-weight: bold;
+}
+
+h1{
+    font-size: 3rem;
+}
+
+h2{
+    font-size: 2rem;
+}
+
+.chunk{
+    display: flex;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 760px) {
+
+}
